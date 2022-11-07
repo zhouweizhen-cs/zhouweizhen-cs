@@ -1,0 +1,60 @@
+.positioner {
+	position: relative;
+	display: inline-block;
+	line-height: 0;
+}
+
+.starbox .colorbar,
+.starbox .ghost {
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.starbox .stars {
+	display: inline-block;
+}
+
+.starbox .stars .star_holder {
+	position: relative;
+	z-index: 1;
+}
+
+.starbox .stars .star_holder .star {
+	display: inline-block;
+	vertical-align: baseline;
+	background-repeat: no-repeat;
+}
+
+
+/* Override with your own image and size… */
+.starbox .stars .star_holder .star {
+	background-image: url('../images/5-large.png');
+	width: 33px;
+	height: 33px;
+}
+
+/* Override with your own colours… */
+.starbox .stars { background: #cccccc; }
+.starbox .rated .stars { background: #dcdcdc; }
+.starbox .rated.hover .stars { background: #cccccc; }
+.starbox .colorbar { background: #1e90ff; }
+.starbox .hover .colorbar { background: #ffcc1c; }
+.starbox .rated .colorbar { background: #64b2ff; }
+.starbox .rated.hover .colorbar { background: #1e90ff; }
+.starbox .ghost { background: #a1a1a1; }
+
+
+.starbox.colours .stars { background: #f9c412; }
+.starbox.colours .hover .stars { background: #BD940F; }
+.starbox.colours .rated .stars { background: #dcdcdc; }
+.starbox.colours .rated.hover .stars { background: #cccccc; }
+.starbox.colours .colorbar { background: #a56a1c; }
+.starbox.colours .hover .colorbar { background: #f4341f; }
+.starbox.colours .rated .colorbar { background: #c29a65; }
+.starbox.colours .rated.hover .colorbar { background: #9f0e00; }
+.starbox.colours .ghost { background: #e2b6b2; }
+
+.table-bordered .starbox.gradient .stars .colorbar { background-image: url('../images/gradient.png') !important; background-repeat: repeat-x; }

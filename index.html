@@ -1,0 +1,2371 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>服务大厅</title>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="cache-control" content="max-age=0">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="expires" content="Tue, 01 Jan 1970 1:00:00 GMT">
+	<meta http-equiv="pragma" content="no-cache">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/jquery.gritter.css">
+	<link rel="stylesheet" href="css/jstarbox.css">
+	<link rel="stylesheet" href="css/layer.css" id="layuicss-skinlayercss">
+	<link rel="stylesheet" href="css/rateit.css">
+	<link rel="stylesheet" href="css/wechat.css">
+
+	<script src="js/json2.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.timestamp.js"></script>
+	<script src="js/layer.js"></script>
+	<script src="js/jquery.noty.packaged.min.js"></script>
+	<script src="js/jquery.fly.js"></script>
+	<script src="js/jquery-migrate-1.2.0.min.js"></script>
+	<script src="js/jquery.placeholder.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootbox.min.js"></script>
+	<script src="js/jquery.gritter.min.js"></script>
+	<script src="js/underscore-min.js"></script>
+	<script src="js/backbone-min.js"></script>
+	<script src="js/backbone.fetch-cache.min.js"></script>
+	<script src="js/jstarbox.js"></script>
+	<script src="js/jquery.rateit.js"></script>
+	<script src="js/jquery.scrollLoading.min.js"></script>
+	<script src="js/TouchSlide.1.1.js"></script>
+	<script src="js/jquery.tinycarousel.js"></script>
+	<script src="js/jquery.paging.js"></script>
+	<script src="js/jquery.easy-paging.js"></script>
+	<script src="js/jquery.easy-pie-chart.min.js"></script>
+	<script src="js/jquery.SuperSlide.2.1.js"></script>
+	<script src="js/jquery-textoverflow.js"></script>
+	<script src="js/public.js"></script>
+
+	<script src="js/flow.js"></script>
+	<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+	
+	<script>
+	    var _hmt = _hmt || [];
+	    (function() {
+  		var hm = document.createElement("script");
+  	    	hm.src = "https://hm.baidu.com/hm.js?bf19426d4f97785598cfc2987b7c6b82";
+ 		var s = document.getElementsByTagName("script")[0]; 
+  		s.parentNode.insertBefore(hm, s);
+	    })();
+	</script>
+
+
+</head>
+
+<body class="bgbody">
+	<!--上方导航栏-->
+	<div class="stand-main-content contents">
+		<div class="scnu_header_title">华南师范大学网上办事大厅</div>
+		<ul class="scnu_nav_ul">
+			<li navtop="apps" class="active">
+				<a href="index.html">全部</a>
+			</li>
+			<li navtop="todo">
+				<a href="todo.html">待提交<span class="count">1</span></a>
+			</li>
+			<li navtop="audit">
+				<a href="toaudit.html">待审核</a>
+			</li>
+			<li navtop="doing">
+				<a href="doing.html">进行中</a>
+			</li>
+			<li navtop="done">
+				<a href="done.html">已完成</a>
+			</li>
+			<li navtop="cc">
+				<a href="flow_cc.html">抄送<span class="count">0</span></a>
+			</li>
+		</ul>
+		<!--输入框-->
+		<div class="search_container">
+			<div class="scnu_search_div">
+				<input type="text" placeholder="请输入流程事项名称" class="search_tt search-input">
+				<input type="button" class="search_bb btn-search-input">
+			</div>
+		</div>
+
+
+		<!--全部页下方的列表-->
+		<div class="bottomBody nopaddingBottom">
+
+
+
+			<ul class="app_List">
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="images/hot_4.png">
+						<p class="app_name_p">部门经办事项查询</p>
+
+						<p class="app_tag_p">信息化建设管理办公室</p>
+						<p class="app_pingjia"></p>
+						<!--<div class="rateit">
+							<div class="rateit-range" style="width:80px;height:16px;">
+								<div class="rateit-selected" style="width:80px;height:16px">
+								</div>
+							</div>
+						</div>-->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/02095d08-74f3-4479-8a2f-b3df81b5fde9/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/02095d08-74f3-4479-8a2f-b3df81b5fde9/icon">
+						<p class="app_name_p">纪委发文</p>
+
+						<p class="app_tag_p">纪检监察室</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+						-->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/03718624-3ec1-4137-a112-56317ca08e5e/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/03718624-3ec1-4137-a112-56317ca08e5e/icon">
+						<p class="app_name_p">寒暑假留校申请</p>
+
+						<p class="app_tag_p">学工部,研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+						-->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/069ac6d1-809b-401b-abaf-2f719d5fa3b4/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/069ac6d1-809b-401b-abaf-2f719d5fa3b4/icon">
+						<p class="app_name_p">学生出国（境）交流项目申请</p>
+
+						<p class="app_tag_p">国际交流合作处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+						-->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/06f6d3d4-a293-4ddf-8111-bca9edd33c64/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/06f6d3d4-a293-4ddf-8111-bca9edd33c64/icon">
+						<p class="app_name_p">一般经费项目开设通知单</p>
+
+						<p class="app_tag_p">财务处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+						-->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/074a79a8-bc2e-4b7c-bfe6-fa441679c0e7/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/074a79a8-bc2e-4b7c-bfe6-fa441679c0e7/icon">
+						<p class="app_name_p">研究生延期毕业申请</p>
+
+						<p class="app_tag_p">研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+						-->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/0cda9073-1656-416f-8418-8903e245a4dd/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/0cda9073-1656-416f-8418-8903e245a4dd/icon">
+						<p class="app_name_p">研究生学位证书英文副本申请</p>
+
+						<p class="app_tag_p">研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+						-->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/13105f48-6c64-4be5-9144-a04fc4f95809/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/13105f48-6c64-4be5-9144-a04fc4f95809/icon">
+						<p class="app_name_p">云平台虚拟服务资源申请</p>
+
+						<p class="app_tag_p">网络中心</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+						-->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/146bb9d1-8378-4bde-8abd-340fc890fd6a/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/146bb9d1-8378-4bde-8abd-340fc890fd6a/icon">
+						<p class="app_name_p">校内邮箱申请</p>
+
+						<p class="app_tag_p">网络中心</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+						-->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/16d6e5b9-63f9-4f79-8739-f91d04840dbc/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/16d6e5b9-63f9-4f79-8739-f91d04840dbc/icon">
+						<p class="app_name_p">教职工离开常驻地报备</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+						-->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/1836123f-88f8-45f2-b6c8-cb2de0107500/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/1836123f-88f8-45f2-b6c8-cb2de0107500/icon">
+						<p class="app_name_p">校名、校徽、注册商标事务申请</p>
+
+						<p class="app_tag_p">政策法规办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+						-->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/2094a198-906b-4dd9-baaa-07036cbb97b1/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/2094a198-906b-4dd9-baaa-07036cbb97b1/icon">
+						<p class="app_name_p">智慧课室临时活动使用申请</p>
+
+						<p class="app_tag_p">网络中心/教师发展中心</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/20d6cece-42da-4e3d-b02f-fb4f5c6524f3/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/20d6cece-42da-4e3d-b02f-fb4f5c6524f3/icon">
+						<p class="app_name_p">本科生退学申请</p>
+
+						<p class="app_tag_p">教务处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/22844b5f-7b62-4390-b2d4-06a0f4929230/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/22844b5f-7b62-4390-b2d4-06a0f4929230/icon">
+						<p class="app_name_p">研究生新生入学缓交学费绿色通道申请</p>
+
+						<p class="app_tag_p">研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/2361731c-8e7b-44d5-8977-874a47c8feb0/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/2361731c-8e7b-44d5-8977-874a47c8feb0/icon">
+						<p class="app_name_p">汕尾校区横幅、海报申请</p>
+
+						<p class="app_tag_p">党政综合办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/239ac724-1a43-45d6-9f30-1c1d0f2881c8/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/239ac724-1a43-45d6-9f30-1c1d0f2881c8/icon">
+						<p class="app_name_p">规章制度合法性审查</p>
+
+						<p class="app_tag_p">政策法规办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/23c59d99-9bb6-4914-b885-a23a17b9ec38/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/23c59d99-9bb6-4914-b885-a23a17b9ec38/icon">
+						<p class="app_name_p">外国人来华居留许可申请</p>
+
+						<p class="app_tag_p">国际交流合作处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/24c98ff5-0104-495d-99cf-eed4b7110b6f/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/24c98ff5-0104-495d-99cf-eed4b7110b6f/icon">
+						<p class="app_name_p">研究生复学申请</p>
+
+						<p class="app_tag_p">研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/292f56dc-d138-4eac-89a2-2c2c0f23f4e3/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/292f56dc-d138-4eac-89a2-2c2c0f23f4e3/icon">
+						<p class="app_name_p">专利发票备案登记</p>
+
+						<p class="app_tag_p">科技处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/299aaf6f-409d-4020-a596-d3e740419444/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/299aaf6f-409d-4020-a596-d3e740419444/icon">
+						<p class="app_name_p">科研项目经费预算调整表</p>
+
+						<p class="app_tag_p">财务处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/2bffeaf9-966f-49d6-be11-3bfe07914153/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/2bffeaf9-966f-49d6-be11-3bfe07914153/icon">
+						<p class="app_name_p">疫情防控期请示报告备案</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/2c1ad946-d376-40af-b926-20ce98ee42fe/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/2c1ad946-d376-40af-b926-20ce98ee42fe/icon">
+						<p class="app_name_p">校级请示/报告</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/2c2b1eb2-59f0-485f-98cb-df4760990c83/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/2c2b1eb2-59f0-485f-98cb-df4760990c83/icon">
+						<p class="app_name_p">校内刊物申请、变更、终止</p>
+
+						<p class="app_tag_p">宣传部</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/2d9468a1-8fc3-4be1-95ee-da47eb9306ec/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/2d9468a1-8fc3-4be1-95ee-da47eb9306ec/icon">
+						<p class="app_name_p">研究生课程补修申请</p>
+
+						<p class="app_tag_p">研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/2f1074fa-6926-4661-92d9-af2e42f24046/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/2f1074fa-6926-4661-92d9-af2e42f24046/icon">
+						<p class="app_name_p">会计档案利用申请</p>
+
+						<p class="app_tag_p">财务处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/2f9fde96-70b0-4b73-808f-150fdd22f9c6/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/2f9fde96-70b0-4b73-808f-150fdd22f9c6/icon">
+						<p class="app_name_p">科研经费入账申请</p>
+
+						<p class="app_tag_p">财务处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/3000d0a6-8221-412c-99cb-a5e9e74b2769/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/3000d0a6-8221-412c-99cb-a5e9e74b2769/icon">
+						<p class="app_name_p">信息发布</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/3265d4b8-1eae-430d-840d-c0c8fd2a4ffe/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/3265d4b8-1eae-430d-840d-c0c8fd2a4ffe/icon">
+						<p class="app_name_p">校级印章用印申请</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/33cbdfe1-a148-4757-b4b7-32adfa9b762e/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/33cbdfe1-a148-4757-b4b7-32adfa9b762e/icon">
+						<p class="app_name_p">校园网办公账号申请</p>
+
+						<p class="app_tag_p">网络中心</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/347e9950-9107-465d-98c6-0abd0cc50f3f/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/347e9950-9107-465d-98c6-0abd0cc50f3f/icon">
+						<p class="app_name_p">校领导接待日预约</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/349c1ab6-f608-45ba-8965-bb2a0874afba/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/349c1ab6-f608-45ba-8965-bb2a0874afba/icon">
+						<p class="app_name_p">网站群建站申请</p>
+
+						<p class="app_tag_p">网络中心</p>
+						<p class="app_pingjia">
+						</p>
+						<div class="rateit">
+							<div class="rateit-range" style="width:80px;height:16px;">
+								<div class="rateit-selected" style="width:80px;height:16px"></div>
+							</div>
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/36c53589-2e2e-4dd9-9368-42ab41925c9b/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/36c53589-2e2e-4dd9-9368-42ab41925c9b/icon">
+						<p class="app_name_p">教职工离校申请</p>
+
+						<p class="app_tag_p">人事处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/37fb3815-5bd3-422e-bf4d-de5d671e0d71/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/37fb3815-5bd3-422e-bf4d-de5d671e0d71/icon">
+						<p class="app_name_p">教职工正版化系统追加授权与Office365网页版授权申请</p>
+
+						<p class="app_tag_p">网络中心</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/3a9499f7-61dc-4dcb-841b-a0f0ba47990e/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/3a9499f7-61dc-4dcb-841b-a0f0ba47990e/icon">
+						<p class="app_name_p">校内单位或教工接受媒体采访、直播报备</p>
+
+						<p class="app_tag_p">宣传部</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/3b3b5d43-9044-4311-87e7-2e1a153ff9b8/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/3b3b5d43-9044-4311-87e7-2e1a153ff9b8/icon">
+						<p class="app_name_p">外国人来华工作许可申请</p>
+
+						<p class="app_tag_p">国际交流合作处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/4091df12-6068-4c6c-97f4-6353b63400f2/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/4091df12-6068-4c6c-97f4-6353b63400f2/icon">
+						<p class="app_name_p">培训类项目用印审批</p>
+
+						<p class="app_tag_p">社会服务处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/45539662-735c-493c-bf7e-f513c58ed194/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/45539662-735c-493c-bf7e-f513c58ed194/icon">
+						<p class="app_name_p">教职工子女附校（幼儿园、小学）报名审批</p>
+
+						<p class="app_tag_p">人事处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/489d6460-897b-45dd-be44-3f493a56b9ab/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/489d6460-897b-45dd-be44-3f493a56b9ab/icon">
+						<p class="app_name_p">研究生毕业证明书申请（证书遗失）</p>
+
+						<p class="app_tag_p">研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/4caf9939-ed30-4bcd-8264-37e5f565109b/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/4caf9939-ed30-4bcd-8264-37e5f565109b/icon">
+						<p class="app_name_p">研究生补办研究生证申请</p>
+
+						<p class="app_tag_p">研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/51fd36ed-bce7-4176-a030-fa9880b3a2d6/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/51fd36ed-bce7-4176-a030-fa9880b3a2d6/icon">
+						<p class="app_name_p">合同文件合法性审查</p>
+
+						<p class="app_tag_p">政策法规办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/54ea636c-37bd-4baa-b40e-d56aee4de9a2/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/54ea636c-37bd-4baa-b40e-d56aee4de9a2/icon">
+						<p class="app_name_p">图书馆检索证明申请</p>
+
+						<p class="app_tag_p">图书馆</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/55206ced-c5b4-4052-a79f-244a56a1b61a/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/55206ced-c5b4-4052-a79f-244a56a1b61a/icon">
+						<p class="app_name_p">党员领导干部操办婚丧喜庆事宜报告</p>
+
+						<p class="app_tag_p">纪检监察处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/5630945a-4b16-417c-9833-d0aa8a98d616/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/5630945a-4b16-417c-9833-d0aa8a98d616/icon">
+						<p class="app_name_p">开具人事证明</p>
+
+						<p class="app_tag_p">人事处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/5987a31d-55f8-4cc0-a3a1-95a97fdea6b1/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/5987a31d-55f8-4cc0-a3a1-95a97fdea6b1/icon">
+						<p class="app_name_p">研究生学位证明书申请（证书遗失）</p>
+
+						<p class="app_tag_p">研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/5d7574b8-cfab-405c-a98e-dfea176dca45/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/5d7574b8-cfab-405c-a98e-dfea176dca45/icon">
+						<p class="app_name_p">教职工请假申请</p>
+
+						<p class="app_tag_p">人事处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/612170d4-3ed7-4fb4-a480-88d68b95134a/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/612170d4-3ed7-4fb4-a480-88d68b95134a/icon">
+						<p class="app_name_p">网站群管理员变更申请</p>
+
+						<p class="app_tag_p">网络中心</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/612273d4-9a65-456b-9e28-1250e02705ee/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/612273d4-9a65-456b-9e28-1250e02705ee/icon">
+						<p class="app_name_p">法律纠纷处理审查</p>
+
+						<p class="app_tag_p">政策法规办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/6498fe67-c054-4692-bc32-b95171f3955f/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/6498fe67-c054-4692-bc32-b95171f3955f/icon">
+						<p class="app_name_p">新生进校报到</p>
+
+						<p class="app_tag_p">学工部,研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/65561e09-6e17-4c22-b1c6-a7b6f4673d5f/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/65561e09-6e17-4c22-b1c6-a7b6f4673d5f/icon">
+						<p class="app_name_p">收费平台项目审批</p>
+
+						<p class="app_tag_p">财务处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/663632c7-159f-48b2-889c-eb11a68deda2/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/663632c7-159f-48b2-889c-eb11a68deda2/icon">
+						<p class="app_name_p">议题征集</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/6b48bac2-5c5a-451a-970c-d3454d1f72c0/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/6b48bac2-5c5a-451a-970c-d3454d1f72c0/icon">
+						<p class="app_name_p">研究生政治审查意见申请</p>
+
+						<p class="app_tag_p">研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/6de122a4-c0f4-4035-81fa-3fd813711def/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/6de122a4-c0f4-4035-81fa-3fd813711def/icon">
+						<p class="app_name_p">智慧课室固定课程使用申请</p>
+
+						<p class="app_tag_p">网络中心/教师发展中心</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/7046f13c-8829-4b46-8354-cc67e5707adf/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/7046f13c-8829-4b46-8354-cc67e5707adf/icon">
+						<p class="app_name_p">办公大楼电子显示屏信息发布审批</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/70739e57-040a-4845-af85-68df8edff1dd/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/70739e57-040a-4845-af85-68df8edff1dd/icon">
+						<p class="app_name_p">微信企业号绑定信息变更申请</p>
+
+						<p class="app_tag_p">网络中心</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/7260f797-7c81-427f-8d6c-7008724e5bd1/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/7260f797-7c81-427f-8d6c-7008724e5bd1/icon">
+						<p class="app_name_p">校内疫情线索上报</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/7453488b-1b5b-405a-bf47-d610f0731e3a/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/7453488b-1b5b-405a-bf47-d610f0731e3a/icon">
+						<p class="app_name_p">研究生境内、外修读课程学分、成绩转换认定申请</p>
+
+						<p class="app_tag_p">研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/76c0e63c-ddeb-406d-ae9d-bf3cb01f07b2/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/76c0e63c-ddeb-406d-ae9d-bf3cb01f07b2/icon">
+						<p class="app_name_p">石牌校区办理办公电话业务申请</p>
+
+						<p class="app_tag_p">后勤处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/78b1b522-b49d-4d4a-a820-dd8652ce7783/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/78b1b522-b49d-4d4a-a820-dd8652ce7783/icon">
+						<p class="app_name_p">一卡通交流卡、进修培训卡申请</p>
+
+						<p class="app_tag_p">信息化建设管理办公室</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/79d8efa7-0bc8-47e3-a0e1-629dd3f4f1bb/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/79d8efa7-0bc8-47e3-a0e1-629dd3f4f1bb/icon">
+						<p class="app_name_p">印章刻制申请</p>
+
+						<p class="app_tag_p">政策法规办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/7b1afe11-5104-4cef-b41a-cd06129e59e4/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/7b1afe11-5104-4cef-b41a-cd06129e59e4/icon">
+						<p class="app_name_p">在校期间表现证明</p>
+
+						<p class="app_tag_p">保卫处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/7bef46fc-7287-4663-a314-92961961a8a1/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/7bef46fc-7287-4663-a314-92961961a8a1/icon">
+						<p class="app_name_p">科学研究伦理审查申请</p>
+
+						<p class="app_tag_p">学术委员会</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/7f5934c1-cfaf-4d93-8354-36c60b29527c/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/7f5934c1-cfaf-4d93-8354-36c60b29527c/icon">
+						<p class="app_name_p">因公参加线上涉外活动</p>
+
+						<p class="app_tag_p">国际交流合作处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/80fb8051-9d88-450d-8e83-832fbdc5138e/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/80fb8051-9d88-450d-8e83-832fbdc5138e/icon">
+						<p class="app_name_p">公务接待方案审核</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/829952b7-161b-4f65-ad5a-e33e534e360a/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/829952b7-161b-4f65-ad5a-e33e534e360a/icon">
+						<p class="app_name_p">A文件中心</p>
+
+						<p class="app_tag_p"></p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/869fe672-0e44-4f3a-885b-de49969fe7e7/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/869fe672-0e44-4f3a-885b-de49969fe7e7/icon">
+						<p class="app_name_p">网上办事大厅用户岗位信息变更申请</p>
+
+						<p class="app_tag_p">信息化建设管理办公室</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/87a384a7-957f-4675-ae67-06a6900839cd/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/87a384a7-957f-4675-ae67-06a6900839cd/icon">
+						<p class="app_name_p">二级单位内部请示/报告</p>
+
+						<p class="app_tag_p">信息化建设管理办公室</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/8b45b056-17d8-4fb2-b540-f8c4f748d1f6/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/8b45b056-17d8-4fb2-b540-f8c4f748d1f6/icon">
+						<p class="app_name_p">研究生保留入学资格申请</p>
+
+						<p class="app_tag_p">研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/8cd33829-a4ee-43ae-8a6c-8f27a5985482/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/8cd33829-a4ee-43ae-8a6c-8f27a5985482/icon">
+						<p class="app_name_p">校外用户申请状态查询</p>
+
+						<p class="app_tag_p">信息化建设管理办公室</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/9322e557-05a9-4a55-bd42-681c64b5e447/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/9322e557-05a9-4a55-bd42-681c64b5e447/icon">
+						<p class="app_name_p">砺儒云课堂开课申请</p>
+
+						<p class="app_tag_p">网络中心</p>
+						<p class="app_pingjia">
+						</p>
+						<div class="rateit">
+							<div class="rateit-range" style="width:80px;height:16px;">
+								<div class="rateit-selected" style="width:80px;height:16px"></div>
+							</div>
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/93e7b298-dd50-4fa6-82ae-c0a452cd1a0f/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/93e7b298-dd50-4fa6-82ae-c0a452cd1a0f/icon">
+						<p class="app_name_p">本科生保留入学资格申请</p>
+
+						<p class="app_tag_p">教务处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/97770035-1dcb-41e7-bdad-bd34c585da1f/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/97770035-1dcb-41e7-bdad-bd34c585da1f/icon">
+						<p class="app_name_p">固定IP业务申请登记</p>
+
+						<p class="app_tag_p">网络中心</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/988b4482-be2a-4480-9576-fb937e5cd409/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/988b4482-be2a-4480-9576-fb937e5cd409/icon">
+						<p class="app_name_p">信息系统（网站）备案申请</p>
+
+						<p class="app_tag_p">信息化建设管理办公室</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/9a5ed5b1-cc99-4e05-861a-1a483ab92312/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/9a5ed5b1-cc99-4e05-861a-1a483ab92312/icon">
+						<p class="app_name_p">合同文本拟定</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/9bd901cb-5b0a-4166-9be1-33f574254919/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/9bd901cb-5b0a-4166-9be1-33f574254919/icon">
+						<p class="app_name_p">信息安全事件（风险）处理申请</p>
+
+						<p class="app_tag_p">网络中心</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/9bd9ee74-239d-4c85-b56a-5b37fdd67db0/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/9bd9ee74-239d-4c85-b56a-5b37fdd67db0/icon">
+						<p class="app_name_p">会议室申请</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/9d688f02-2700-46c8-b3b9-89f6066e1693/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/9d688f02-2700-46c8-b3b9-89f6066e1693/icon">
+						<p class="app_name_p">学生离校外出申请</p>
+
+						<p class="app_tag_p">学工部,研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/9efdb89a-0730-46d3-8648-650fe825a7d8/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/9efdb89a-0730-46d3-8648-650fe825a7d8/icon">
+						<p class="app_name_p">（因私出国旅游）事业单位法人证书复印件申请</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/a23a4b6d-7c37-4044-9b16-a6e802cbef63/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/a23a4b6d-7c37-4044-9b16-a6e802cbef63/icon">
+						<p class="app_name_p">党委/行政发文</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/a3b4dfbf-bb5c-4487-899f-e3a03054de40/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/a3b4dfbf-bb5c-4487-899f-e3a03054de40/icon">
+						<p class="app_name_p">培训类项目《事业单位法人证书》、法人身份证复印件、授权委托书使用申请</p>
+
+						<p class="app_tag_p">社会服务处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/a42a3dad-2e52-4164-80fc-cf3b9b12c381/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/a42a3dad-2e52-4164-80fc-cf3b9b12c381/icon">
+						<p class="app_name_p">本科生留级、降级、延长学习年限申请</p>
+
+						<p class="app_tag_p">教务处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/a60c0f0a-c5af-414b-b924-3909eb9d45f0/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/a60c0f0a-c5af-414b-b924-3909eb9d45f0/icon">
+						<p class="app_name_p">收费票据核销申请</p>
+
+						<p class="app_tag_p">财务处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/a79100f1-17ef-4ea7-9d16-be5821e906d9/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/a79100f1-17ef-4ea7-9d16-be5821e906d9/icon">
+						<p class="app_name_p">二级单位主(承)办涉外会议申请表</p>
+
+						<p class="app_tag_p">国际交流合作处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/a86b4b7c-1078-4c97-881c-d3a1e168fe46/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/a86b4b7c-1078-4c97-881c-d3a1e168fe46/icon">
+						<p class="app_name_p">党委/行政收文</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<div class="rateit">
+							<div class="rateit-range" style="width:80px;height:16px;">
+								<div class="rateit-selected" style="width:0px;height:16px"></div>
+							</div>
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/a9008f78-a669-43eb-bdc3-91f4eb47297c/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/a9008f78-a669-43eb-bdc3-91f4eb47297c/icon">
+						<p class="app_name_p">研究生毕业证书英文副本申请</p>
+
+						<p class="app_tag_p">研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/aaa88da7-4bdd-45da-aad2-63caaa08ef07/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/aaa88da7-4bdd-45da-aad2-63caaa08ef07/icon">
+						<p class="app_name_p">二级单位间工作联系函</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/ac7e1cf7-cb9d-4ddf-944c-8fc5e40c555c/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/ac7e1cf7-cb9d-4ddf-944c-8fc5e40c555c/icon">
+						<p class="app_name_p">教职工因公临时出国（境）申请</p>
+
+						<p class="app_tag_p">国际交流合作处</p>
+						<p class="app_pingjia">
+						</p>
+						<div class="rateit">
+							<div class="rateit-range" style="width:80px;height:16px;">
+								<div class="rateit-selected" style="width:0px;height:16px"></div>
+							</div>
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/b1f1a12d-48d6-49d3-8bec-c524b6e24442/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/b1f1a12d-48d6-49d3-8bec-c524b6e24442/icon">
+						<p class="app_name_p">《事业单位法人证书》、法人身份证复印件、 授权委托书使用申请表</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/ba1bc11b-21ca-461d-ba63-312d51829efc/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/ba1bc11b-21ca-461d-ba63-312d51829efc/icon">
+						<p class="app_name_p">收费票据申领</p>
+
+						<p class="app_tag_p">财务处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/c072d0bd-3302-404c-8b0e-4f9defec37ac/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/c072d0bd-3302-404c-8b0e-4f9defec37ac/icon">
+						<p class="app_name_p">科研经费决算编制和审核</p>
+
+						<p class="app_tag_p">财务处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/c0e65c35-9fb7-42c8-8e41-f111e911790d/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/c0e65c35-9fb7-42c8-8e41-f111e911790d/icon">
+						<p class="app_name_p">统一身份认证接入申请</p>
+
+						<p class="app_tag_p">网络中心</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/c13d0ef5-18aa-41f1-bdd8-4e5371ed145f/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/c13d0ef5-18aa-41f1-bdd8-4e5371ed145f/icon">
+						<p class="app_name_p">收费立项申请</p>
+
+						<p class="app_tag_p">财务处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/c1efade2-f232-4218-b2ac-8c4eec5b053b/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/c1efade2-f232-4218-b2ac-8c4eec5b053b/icon">
+						<p class="app_name_p">会议服务平台管理权限申请</p>
+
+						<p class="app_tag_p">信息化建设管理办公室</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/c3228f1c-36bd-435b-aa0c-74b52509d65b/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/c3228f1c-36bd-435b-aa0c-74b52509d65b/icon">
+						<p class="app_name_p">研究生休学申请</p>
+
+						<p class="app_tag_p">研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/c988dd99-c1f8-4b0f-b478-cceec91518e4/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/c988dd99-c1f8-4b0f-b478-cceec91518e4/icon">
+						<p class="app_name_p">合同授权申请</p>
+
+						<p class="app_tag_p">政策法规办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/d137b2fc-f708-4c7d-9213-f0df51bbb29c/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/d137b2fc-f708-4c7d-9213-f0df51bbb29c/icon">
+						<p class="app_name_p">出具校级调研函申请</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/d27650b0-a9d6-43d2-8f3c-c82a8bde6323/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/d27650b0-a9d6-43d2-8f3c-c82a8bde6323/icon">
+						<p class="app_name_p">本科生复学申请</p>
+
+						<p class="app_tag_p">教务处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/d6e1209c-c2b5-4f6a-8d1d-89dd63061a34/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/d6e1209c-c2b5-4f6a-8d1d-89dd63061a34/icon">
+						<p class="app_name_p">学生返校申请</p>
+
+						<p class="app_tag_p">学工部,研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/db0b6847-a0fa-47b9-abf9-23f70c3272a9/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/db0b6847-a0fa-47b9-abf9-23f70c3272a9/icon">
+						<p class="app_name_p">二级单位主（承）办校级以上会议申请表</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/e0cfc4e2-a2b6-4c48-96ab-4358b30464bb/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/e0cfc4e2-a2b6-4c48-96ab-4358b30464bb/icon">
+						<p class="app_name_p">研究生转专业/转导师申请</p>
+
+						<p class="app_tag_p">研究生院</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/e22c1b31-7084-497c-805c-7ab23fda7984/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/e22c1b31-7084-497c-805c-7ab23fda7984/icon">
+						<p class="app_name_p">报备人员因私出国(境)申请</p>
+
+						<p class="app_tag_p">保卫处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/eb77d6ad-be3f-434b-9866-ddbb4a9fea8e/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/eb77d6ad-be3f-434b-9866-ddbb4a9fea8e/icon">
+						<p class="app_name_p">域名申请和变更</p>
+
+						<p class="app_tag_p">网络中心</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/eba594f9-293c-49b3-999c-3c11e65a46f7/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/eba594f9-293c-49b3-999c-3c11e65a46f7/icon">
+						<p class="app_name_p">邀请校领导出席校内公务活动申请</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/eef0723a-fd5b-4598-bca5-ddc3117da4b6/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/eef0723a-fd5b-4598-bca5-ddc3117da4b6/icon">
+						<p class="app_name_p">本科生恢复入学资格申请</p>
+
+						<p class="app_tag_p">教务处</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/ef5fb6db-a77e-412c-a244-95e27a874c69/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/ef5fb6db-a77e-412c-a244-95e27a874c69/icon">
+						<p class="app_name_p">信息填报平台使用申请</p>
+
+						<p class="app_tag_p">信息化建设管理办公室</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/f2583a24-5027-4793-84d9-8e56e19c15cd/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/f2583a24-5027-4793-84d9-8e56e19c15cd/icon">
+						<p class="app_name_p">新媒体平台认证申请/年审申请</p>
+
+						<p class="app_tag_p">宣传部</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:0px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+							<img src="images/star.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/f60074ba-97d4-4c4f-b0ec-ed1e18848321/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/f60074ba-97d4-4c4f-b0ec-ed1e18848321/icon">
+						<p class="app_name_p">开具学校介绍信申请</p>
+
+						<p class="app_tag_p">党办校办</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="app_img" src="https://ehall.scnu.edu.cn/infoplus/file/app/f7106ca1-e258-4860-ab15-91b9df726396/icon" data-url="https://ehall.scnu.edu.cn/infoplus/file/app/f7106ca1-e258-4860-ab15-91b9df726396/icon">
+						<p class="app_name_p">横幅标语悬挂申请</p>
+
+						<p class="app_tag_p">宣传部</p>
+						<p class="app_pingjia">
+						</p>
+						<!--<div class="rateit"><div class="rateit-range" style="width:80px;height:16px;"><div class="rateit-selected" style="width:80px;height:16px"></div></div></div>
+      -->
+						<div style="width: 80px;height: 16px;font-size: 0;">
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+							<img src="images/star_active.png" width="16px" height="16px" />
+						</div>
+						<p></p>
+					</a>
+				</li>
+
+
+
+
+
+
+
+			</ul>
+
+
+
+		</div>
+
+
+	</div>
+
+
+
+</body>
+
+</html>

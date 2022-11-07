@@ -1,0 +1,79 @@
+.floatTool{
+	width: 55px;
+}
+.floatTool .button{
+	height: 55px;
+}
+.floatTool .contactWrapDiv{
+	right: 55px;
+}
+.help_span{
+	display: block;
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 32px;
+    font-weight: bold;
+}
+.floatTool .contact i.i-icon-feedback{
+	top: 35%;
+}
+.floatTool .button:hover span.help_span{
+	display: none;
+}
+.floatTool .hoverDiv{
+	padding-top: 8px;
+}
+.floatTool .button:hover .hoverDiv{
+	font-size: 18px;
+}
+.floatTool td{
+	font-size: 18px;
+	width: 100%;
+}
+.floatTool .entrust i.i-icon-user-secret{
+	top: 35%;
+    margin: -16px 0 0 -11px;
+    font-size: 30px;
+}
+#toTop i.i-icon-publish{
+	position: absolute;
+	top: 35%;
+	left: 50%;
+    margin: -16px 0 0 -15px;
+    font-size: 30px;
+}
+#toTop:hover .hoverDiv{
+	font-size: 18px;
+}
+
+
+a.tool_button:hover .toolbar_button_tip{
+	top: 48px;
+}
+#form_command_bar{
+	height: 50px;
+}
+p.tool_button_p {
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #4a4a4a;
+}
+.disabled p.tool_button_p {
+    color: #acacac;
+}
+a.tool_button{
+	font-size: 24px;
+}
+#command_holder li.command_button{
+	margin-top: 10px;
+}
+#command_holder li.command_button{
+	float: right;
+}
+#command_holder li.command_button ~ li.command_button {
+    margin-top: 10px;
+}
+#renderContent_holder{
+	padding-top: 105px;
+}
